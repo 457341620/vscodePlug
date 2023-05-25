@@ -1,16 +1,23 @@
 {
 	"打印log": {
-		"prefix": "log2",
+		"prefix": "log",
 		"body": [
 			"console.log('$1', 'log);"
 		],
 		"description": "打印log"
 	},
-	"tuzi": {
-    		"prefix": "log2",
+	"打印log2": {
+    		"prefix": "co",
     		"body": [
     			"console.log('$1', 'log);"
     		],
     		"description": "打印log"
     	},
+	"const一个变量": {
+		"prefix": "co",
+		"body": [
+			"const a: any = '';"
+		],
+		"description": "打印log"
+	}
 }
