@@ -1,0 +1,16 @@
+{
+	"打印log": {
+		"prefix": "log2",
+		"body": [
+			"console.log('$1', 'log);"
+		],
+		"description": "打印log"
+	},
+	"tuzi": {
+    		"prefix": "log2",
+    		"body": [
+    			"console.log('$1', 'log);"
+    		],
+    		"description": "打印log"
+    	},
+}
