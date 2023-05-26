@@ -1,11 +1,11 @@
 {
-  "name": "reactSnippetsWeb",
-  "displayName": "reactSnippetsWeb",
+  "name": "reactSnippetsWebV2",
+  "displayName": "reactSnippetsWebV2",
   "publisher": "457341620",
   "description": "",
-  "version": "0.0.6",
+  "version": "0.0.1",
   "engines": {
-    "vscode": "^1.78.0"
+    "vscode": "^1.75.0"
   },
   "categories": [
     "Snippets"

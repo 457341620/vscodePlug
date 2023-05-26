@@ -2,28 +2,28 @@
 	"打印log": {
 		"prefix": "log",
 		"body": [
-			"console.log('$1', 'log);"
+			"console.log($1, 'log---');"
 		],
 		"description": "打印log"
 	},
 	"打印log2": {
 		"prefix": "co",
 		"body": [
-			"console.log('$1', 'log);"
+			"console.log($1, 'log---');"
 		],
 		"description": "打印log"
 	},
 	"const一个变量": {
 		"prefix": "aa",
 		"body": [
-			"const '$1': any = '';"
+			"const $1: any = '';"
 		],
 		"description": "const一个变量"
 	},
 	"promise异步变同步": {
 		"prefix": "all",
 		"body": [
-			"  const '$1' = async ()=>{\n  // 调用 const a = awit getSchemeRefFromVal() 加awit 结果是多个数组，a要取a[o]\n    const newArr: any = [];\n    return await Promise.all(Object.keys(pageData.schemaFormRefList).map(async (refItem: any, )=>{\n      const itemVal = pageData.schemaFormRefList[refItem];\n      const val = await itemVal?.current?.validateFields();\n      console.log(itemVal, 'item222', val, newArr);\n      return newArr.push(val)\n    }));\n  }"
+			"  const $1 = async ()=>{\n  // 调用 const a = awit getSchemeRefFromVal() 加awit 结果是多个数组，a要取a[o]\n    const newArr: any = [];\n    return await Promise.all(Object.keys(pageData.schemaFormRefList).map(async (refItem: any, )=>{\n      const itemVal = pageData.schemaFormRefList[refItem];\n      const val = await itemVal?.current?.validateFields();\n      console.log(itemVal, 'item222', val, newArr);\n      return newArr.push(val)\n    }));\n  }"
 		],
 		"description": "promise异步变同步"
 	},
@@ -44,7 +44,7 @@
 	"异步的function": {
 		"prefix": "asy",
 		"body": [
-			"export async function '$1'(params: any) {\n  const res = await requestApi.post('/material/materialSave.json', params, { dataType: 'form' });\n  return { success: true, data: res.data };\n}"
+			"export async function $1(params: any) {\n  const res = await requestApi.post('/material/materialSave.json', params, { dataType: 'form' });\n  return { success: true, data: res.data };\n}"
 		],
 		"description": "异步的function"
 	},
@@ -65,7 +65,7 @@
 	"数组差集": {
 		"prefix": "cj",
 		"body": [
-			"const  '$1' =  '$1'.filter((v: any) => !delVal.find((delitem: any) => delitem === v))"
+			"const  $1 =  '$1'.filter((v: any) => !delVal.find((delitem: any) => delitem === v))"
 		],
 		"description": "数组差集"
 	},
@@ -79,21 +79,21 @@
 	"定义数组": {
 		"prefix": "csa",
 		"body": [
-			"const '$1': any = [];"
+			"const $1: any = [];"
 		],
 		"description": "定义数组"
 	},
 	"定义对象": {
 		"prefix": "cso",
 		"body": [
-			"const '$1': any = {};"
+			"const $1: any = {};"
 		],
 		"description": "定义对象"
 	},
 	"模版解析": {
 		"prefix": "cst",
 		"body": [
-			"const { '$1' }: any = '$1';"
+			"const { $1 }: any = '$1';"
 		],
 		"description": "模版解析"
 	},
@@ -114,7 +114,7 @@
 	"const函数": {
 		"prefix": "fun",
 		"body": [
-			"const '$1' = (data: any)=>{\n     \n};"
+			"const $1 = (data: any)=>{\n     \n};"
 		],
 		"description": "const函数"
 	},
@@ -149,35 +149,35 @@
 	"替换换行符": {
 		"prefix": "hui",
 		"body": [
-			"'$1'.replace(/[\r\n]/g,'');"
+			"$1.replace(/[\r\n]/g,'');"
 		],
 		"description": "替换换行符"
 	},
 	"if的判断": {
 		"prefix": "if",
 		"body": [
-			"if ('$1') {\n                \n };"
+			"if ($1) {\n                \n };"
 		],
 		"description": "if的判断"
 	},
 	"数组是否出现某个元素": {
 		"prefix": "inc",
 		"body": [
-			"'$1'.includes(val);"
+			"$1.includes(val);"
 		],
 		"description": "数组是否出现某个元素"
 	},
 	"字符串是否出现某个元素": {
 		"prefix": "ind",
 		"body": [
-			"'$1'.indexOf('a') !== -1"
+			"$1.indexOf('a') !== -1"
 		],
 		"description": "字符串是否出现某个元素"
 	},
 	"判断数组是不等于true或者false": {
 		"prefix": "ist",
 		"body": [
-			"const '$1' = !a.find(i => i !== true);"
+			"const $1 = !a.find(i => i !== true);"
 		],
 		"description": "判断数组是不等于true或者false"
 	},
@@ -219,7 +219,7 @@
 	"遍历ts ": {
 		"prefix": "mapt",
 		"body": [
-			"'$1'?.map((item: any)=>{\n                  \n  });"
+			"$1?.map((item: any)=>{\n                  \n  });"
 		],
 		"description": "遍历ts"
 	},
@@ -293,14 +293,14 @@
 	"深拷贝": {
 		"prefix": "shen",
 		"body": [
-			"const '$1'  = JSON.parse(JSON.stringify(newObj));"
+			"const $1  = JSON.parse(JSON.stringify(newObj));"
 		],
 		"description": "深拷贝"
 	},
 	"css鼠标禁止点击": {
 		"prefix": "shub",
 		"body": [
-			".'$1'{\n  pointer-events: none;\n  cursor: none;\n}"
+			".$1{\n  pointer-events: none;\n  cursor: none;\n}"
 		],
 		"description": "css鼠标禁止点击"
 	},
@@ -363,7 +363,7 @@
 	"表单的值获取": {
 		"prefix": "getval",
 		"body": [
-			"const '$1': any = await ref?.current?.validateFields();"
+			"const $1: any = await ref?.current?.validateFields();"
 		],
 		"description": "表单的值获取"
 	},
